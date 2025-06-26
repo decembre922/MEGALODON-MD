@@ -1,28 +1,32 @@
-{
-  "name": "MEGALODON-MD",
-  "description": "Javascript WhatsApp bot made by ᴅʏʙʏ ᴛᴇᴄʜ",
-  "logo": "https://files.catbox.moe/frns4k.jpg",
-  "keywords": ["MEGALODON-MD"],
-  "success_url": "/",
 
-    "stack": "container",
-  "env": {
-    "SESSION_ID": {
-      "description": "Put the session-id here.",
-      "required": true,
-      "value": ""
-    },  
+{
+    "bot-name": "MEGALODON-MD",
+    "description": "Whiskey Sockets Baileys Whatsapp bot by DybyTech",
+    "logo": "https://files.catbox.moe/frns4k.jpg",
+    "keywords": ["bot"],
+    "documentation-link": "https://meg-lodon-session.onrender.com",
+    "owner-verification": "herokutruem@gmail.com",
+  
+    "env": {
+      "SESSION_ID": {
+        "description": "Put your SESSION_ID here. Make sure it starts with MEGALODON~MD~  or get session id from here,  https://meg-lodon-session.onrender.com/pair",
+        "value":"",
+        "required": true
+        
+      },
+      "PREFIX": {
+        "description": "Bot command prefix, (e.g, . , ! @ etc",
+        "value":".",
+        "required": true
+        
+      },
     
+ 
     "STICKER_NAME": {
       "description": "type your sticker pack name.",
       "required": false,
-      "value": "MEGALODON-MD"
-    }, 
-      
-    "PREFIX": {
-      "description": "paste your bot prefix note! Don't apply null prefix.",
-      "required": false,
-      "value": "."
+      "value": "𝐌𝐄𝐆𝐀𝐋𝐎𝐃𝐎𝐍-𝐌𝐃"
+  
     },
     
     "MODE": {
@@ -31,19 +35,20 @@
       "value": "public"
       
     },
-
-     "ANTI_DELETE": {
-      "description": "set true for show deleted messages.",
-      "required": false,
-      "value": "true"  
-    },
+    
     
     "ALWAYS_ONLINE": {
       "description": "Make it true if want always online.",
       "required": false,
       "value": "false"  
     },    
-   
+  
+    "AUTO_VOICE": {
+      "description": "Make it true if want automatic voice reply .",
+      "required": false,
+      "value": "false"
+    }, 
+
     "AUTO_REPLY": {
       "description": "Make it true if you want automatic reply.",
       "required": false,
@@ -57,14 +62,8 @@
     }, 
 
 
-    "AUTO_STATUS_SEEN": {
-      "description": "Make it true for automatic status seen.",
-      "required": true,
-      "value": "true"
-    }, 
-
     "AUTO_STATUS_REACT": {
-      "description": "make it true for automatic status reaction or like.",
+      "description": "Make it true for automatic status react & seen.",
       "required": true,
       "value": "true"
     }, 
@@ -78,7 +77,7 @@
     "AUTO_STATUS_MSG": {
       "description": "Type custom message on status reply",
       "required": true,
-      "value": "*SEEN YOUR STATUS BY MEGALODON-MD 🥶*"
+      "value": "*𝐌𝐄𝐆𝐀𝐋𝐎𝐃𝐎𝐍-𝐌𝐃 BOT VIEWED YOUR STATUS *"
    
      }, 
     
@@ -91,14 +90,14 @@
     "OWNER_NUMBER": {
       "description": "put the owner number for bot.",
       "required": false,
-      "value": "92310344XXXX"
+      "value": "50948336180"
 
     }, 
 
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "MEGALODON-MD"
+      "value": "𝐌𝐄𝐆𝐀𝐋𝐎𝐃𝐎𝐍-𝐌𝐃"
 
       }, 
 
@@ -108,42 +107,23 @@
       "value": "true"
       
     },
-
-     "ANTI_LINK_KICK": {
-      "description": "Make it true if you want bot auto remove group link.",
-      "required": true,
-      "value": "false"
-      
-    },
     
     "ANTI_BAD": {
       "description": "Make it true if you want bot auto delete bad words.",
       "required": false,
       "value": "false"
-    },
+    }, 
 
-   "MENTION_REPLY": {
-      "description": "make it true if want mention reply if someone menetion you.",
-      "required": false,
-      "value": "false"
-    },
-    
-    "MENU_IMAGE_URL": {
-      "description": "add url for mention reply and menu if want.",
-      "required": false,
-      "value": "https://files.catbox.moe/frns4k.jpg"
-    },
-    
      "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅʏʙʏ ᴛᴇᴄʜ*"
+      "value": "> *©  ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴅʏʙʏ ᴛᴇᴄʜ*"
     },
 
       "DELETE_LINKS": {
       "description": "remove links from group automatically without removing member",
       "required": false,
-      "value": "false"
+      "value": "true"
     },
     
     "AUTO_RECORDING": {
@@ -175,39 +155,14 @@
       "description": "put here custom react react emojis.",
       "required": false,
       "value": "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍"
-    }, 
     
-    "ANTI_DEL_PATH": {
-      "description": "change it to -same- if you want to resend deleted message in same chat othwise inbox",
-      "required": false,
-      "value": "inbox"
     }, 
-
-    "ADMIN_EVENTS": {
-      "description": "make it true if want know who promote or demote a member .",
-      "required": false,
-      "value": "false"
-    },
-
-    "WELCOME": {
-      "description": "make it true if want goodbye and welcome message in groups.",
-      "required": false,
-      "value": "true"
-    },
 
     "READ_MESSAGE": {
       "description": "Make it true if you want bot read your all sms just now.",
       "required": false,
       "value": "false"
     }
-
-},
-
-     "buildpacks": [
-        {
-            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-        }
-     ],
-  "stack": "heroku-24"
-}
-  
+  }
+    }
+      

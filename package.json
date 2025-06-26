@@ -1,5 +1,5 @@
 {
-  "name": "MEGALODON-MD",
+"name": "MEGALODON-MD",
   "version": "1.0.0",
   "description": "A WhatsApp Bot Created By DybyTech",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "restart": "pm2 restart MEGALODON-MD"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "6.7.17",
+    "baileys": "npm:baileys-pro@latest",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@dark-yasiya/yt-dl.js": "1.0.5",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",

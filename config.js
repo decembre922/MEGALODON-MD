@@ -14,6 +14,8 @@ AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
 // make true or false status auto seen
 AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
 // make true if you want auto reply on status 
+AUTO_STICKER: process.env.AUTO_STICKER || "true",
+ //make true if you want auto sticker   
 AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
 // make true if you want auto reply on status 
 AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*SEEN YOUR STATUS BY MEGALODON-MD 🤍*",
@@ -24,15 +26,19 @@ ADMIN_EVENTS: process.env.ADMIN_EVENTS || "false",
 // make true to know who dismiss or promoted a member in group
 ANTI_LINK: process.env.ANTI_LINK || "true",
 // make anti link true,false for groups 
+ANTI_DELETE: process.env.ANTI_DELETE || "true",
+// set true false for anti delete     
+ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "inbox", 
+// change it to 'same' if you want to resend deleted message in same chat     
 MENTION_REPLY: process.env.MENTION_REPLY || "false",
 // make true if want auto voice reply if someone menetion you 
-MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/rful77.jpg",
+MENU_IMAGE_URL: process.env.MENU_IMAGE_URL || "https://files.catbox.moe/2ozipw.jpg",
 // add custom menu and mention reply image url
 PREFIX: process.env.PREFIX || ".",
 // add your prifix for bot   
-BOT_NAME: process.env.BOT_NAME || "MEGALODON-MD",
+BOT_NAME: process.env.BOT_NAME || "𝐌𝐄𝐆𝐀𝐋𝐎𝐃𝐎𝐍-𝐌𝐃",
 // add bot name here for menu
-STICKER_NAME: process.env.STICKER_NAME || "MEGALODON-MD",
+STICKER_NAME: process.env.STICKER_NAME || "put your name",
 // type sticker pack name 
 CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
 // make this true for custom emoji react    
@@ -46,9 +52,9 @@ OWNER_NAME: process.env.OWNER_NAME || "kelly-tec",
 // add bot owner name
 DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴇɢᴀʟᴏᴅᴏɴ ᴍᴅ*",
 // bot description    
-ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/rful77.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/nzc6xk.jpg",
 // image for alive msg
-LIVE_MSG: process.env.LIVE_MSG || "> Zinda Hun Yar *MEGALODON-MD*⚡",
+LIVE_MSG: process.env.LIVE_MSG || "> *MEGALODON-MD*⚡",
 // alive msg content
 READ_MESSAGE: process.env.READ_MESSAGE || "false",
 // Turn true or false for automatic read msgs
@@ -62,10 +68,6 @@ ANTI_LINK_KICK: process.env.ANTI_LINK_KICK || "false",
 // kick user if share link 
 AUTO_VOICE: process.env.AUTO_VOICE || "false",
 // auto voice messages
-AUTO_STICKER: process.env.AUTO_STICKER || "false",
-// auto stickers 
-AUTO_REPLY: process.env.AUTO_REPLY || "false",
-// automatic text reply 
 ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
 // always online 
 PUBLIC_MODE: process.env.PUBLIC_MODE || "false",
@@ -78,8 +80,6 @@ DEV: process.env.DEV || "35670509",
 // your whatsapp number        
 ANTI_VV: process.env.ANTI_VV || "true",
 // anti view once 
-ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "log", 
-// path to save deleted messages
 AUTO_RECORDING: process.env.AUTO_RECORDING || "false"
 // auto recording status 
 };
